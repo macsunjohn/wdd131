@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <title>Rubia M. Francesco</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>WDD 131 - Mark John</h1>
+
+    <!-- Top Header -->
+    <header class="top-header">
+        <h1>WDD 131: Dynamic Web Fundamentals</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="#">LinkedIn</a>
+        <a href="#">I-Learn</a>
+        <a href="#">Scripture</a>
+        <a href="#">Final Project</a>
+    </nav>
+
+    <!-- Page Title -->
+    <main>
+        <h2 class="page-title">Rubia M. Francesco</h2>
+
+        <section class="content">
+            <!-- About Me -->
+            <div class="card about">
+                <h3>About Me</h3>
+
+                <div class="about-content">
+                    <p>
+                        My name is Rubia and I go by Ruby. I was born in South Africa
+                        and live with my family in Madagascar. I am currently working
+                        as an administrative legal assistant at a law firm. My children
+                        are my world and I love spending time with them. I love to travel
+                        and I love to learn new things.
+                    </p>
+
+                    <img src="https://via.placeholder.com/150" alt="Profile photo">
+                </div>
+
+                <h4 class="location">Toloria, Madagascar</h4>
+
+                <div class="location-info">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg"
+                        alt="Flag of Madagascar" class="flag">
+
+                    <p>
+                        Madagascar is the 4th largest island in the world and is located
+                        in the Indian Ocean. It is home to 5% of the world's plant and
+                        animal species, of which more than 80% are endemic to Madagascar.
+                        The island is best known for its lemurs, baobab trees, and vanilla.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <aside class="card resources">
+                <h3>Web Dev Resources</h3>
+                <ul>
+                    <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://w3schools.com" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://udemy.com" target="_blank">Udemy</a></li>
+                    <li><a href="https://picsum.photos" target="_blank">Lorem Picsum</a></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © <span id="year"></span> 🌸 Rubia Magdalena Francesco 🌸 Madagascar
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
