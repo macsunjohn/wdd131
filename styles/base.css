@@ -64,9 +64,29 @@ main {
     margin: 1rem 5;
 }
 
+.page-border {
+    border: 4px solid #ffffff;
+}
+
+/* Footer bar */
 footer {
-    background-color: #193e64;
-    color: #fff;
+    background-color: #1f4d72;
+    /* dark blue */
+    color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
+}
+
+/* Main copyright text */
+footer .copyright {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Last modified text */
+footer .modified {
+    margin-top: 0.4rem;
+    font-size: 0.95rem;
+    color: #ffff66;
+    /* yellow */
 }
