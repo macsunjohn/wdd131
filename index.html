@@ -3,85 +3,60 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mark John</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals | Austine Dominic Essien | HTML, CSS, JavaScript fundamentals">
+    <meta name="author" content="Austine Dominic Essien">
+    <title>WDD 131 – Dynamic Web Fundamentals – Austine Dominic Essien</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
 
-    <!-- Top Header -->
-<header class="top-header">
-    <h1>WDD 131: Dynamic Web Fundamentals</h1>
-</header>
-
-<nav class="main-nav">
-    <a href="#">LinkedIn</a>
-    <a href="#">I-Learn</a>
-    <a href="#">Scripture</a>
-    <a href="#">Final Project</a>
-</nav>
-
-    <!-- Page Title -->
     <main>
-        <h2 class="page-title">Rubia M. Francesco</h2>
+        <h1>Austine Dominic Essien</h1>
 
-        <section class="content">
-            <!-- About Me -->
-            <div class="card about">
-                <h3>About Me</h3>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/my-profile-picture.jpg" alt="Profile photo of Austine Dominic Essien">
+            <p>
+                I am studying web development and enjoy building clean, responsive, and dynamic web pages using modern
+                tools.
+            </p>
+        </section>
 
-                <div class="about-content">
-                    <p>
-                        My name is Rubia and I go by Ruby. I was born in South Africa
-                        and live with my family in Madagascar. I am currently working
-                        as an administrative legal assistant at a law firm. My children
-                        are my world and I love spending time with them. I love to travel
-                        and I love to learn new things.
-                    </p>
-
-                    <img src="https://via.placeholder.com/150" alt="Profile photo">
-                </div>
-
-                <h4 class="location">Toloria, Madagascar</h4>
-
-                <div class="location-info">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg"
-                        alt="Flag of Madagascar" class="flag">
-
-                    <p>
-                        Madagascar is the 4th largest island in the world and is located
-                        in the Indian Ocean. It is home to 5% of the world's plant and
-                        animal species, of which more than 80% are endemic to Madagascar.
-                        The island is best known for its lemurs, baobab trees, and vanilla.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Resources -->
-            <aside class="card resources">
-                <h3>Web Dev Resources</h3>
-                <ul>
-                    <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
-                    <li><a href="https://smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
-                    <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
-                    <li><a href="https://w3schools.com" target="_blank">W3 Schools</a></li>
-                    <li><a href="https://udemy.com" target="_blank">Udemy</a></li>
-                    <li><a href="https://picsum.photos" target="_blank">Lorem Picsum</a></li>
-                </ul>
-            </aside>
+        <section class="card">
+            <h2>My Interests</h2>
+            <img src="images/illustration-photo.jpg" alt="Web development illustration">
+            <p>
+                I am interested in frontend development, UI design, and learning JavaScript to build interactive web
+                experiences.
+            </p>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>
-            © <span id="year"></span> 🌸 Rubia Magdalena Francesco 🌸 Madagascar
+            &copy; <span id="currentyear"></span> Austine Dominic Essien | Nigeria
         </p>
         <p id="lastModified"></p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
