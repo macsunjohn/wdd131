@@ -1,0 +1,111 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+ }
+
+ body {
+     background-color: #f4f4f4;
+     color: #333;
+ }
+
+ /* Header */
+ .top-header {
+     background-color: #1f4d73;
+     color: white;
+     text-align: center;
+     padding: 1rem;
+ }
+
+ /* Navigation */
+ .main-nav {
+     display: flex;
+     justify-content: space-around;
+     background-color: #333;
+ }
+
+ .main-nav a {
+     color: white;
+     text-decoration: none;
+     padding: 1rem;
+ }
+
+ .main-nav a:hover {
+     background-color: #555;
+ }
+
+ /* Main */
+ .page-title {
+     text-align: center;
+     margin: 1.5rem 0;
+ }
+
+ .content {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     gap: 1.5rem;
+     padding: 1rem 2rem;
+ }
+
+ /* Cards */
+ .card {
+     background-color: white;
+     border-radius: 8px;
+     border: 1px solid #ccc;
+ }
+
+ .card h3 {
+     background-color: #1f4d73;
+     color: white;
+     padding: 0.75rem;
+     border-radius: 8px 8px 0 0;
+ }
+
+ /* About Section */
+ .about-content {
+     display: flex;
+     gap: 1rem;
+     padding: 1rem;
+ }
+
+ .about-content img {
+     width: 150px;
+     border-radius: 5px;
+ }
+
+ .location {
+     text-align: center;
+     margin-top: 1rem;
+     font-weight: bold;
+ }
+
+ .location-info {
+     display: flex;
+     gap: 1rem;
+     padding: 1rem;
+ }
+
+ .flag {
+     width: 120px;
+     border: 1px solid #ccc;
+ }
+
+ /* Resources */
+ .resources ul {
+     list-style: disc;
+     padding: 1rem 2rem;
+ }
+
+ .resources a {
+     color: blue;
+ }
+
+ /* Footer */
+ footer {
+     background-color: #1f4d73;
+     color: white;
+     text-align: center;
+     padding: 1rem;
+     margin-top: 2rem;
+ }
