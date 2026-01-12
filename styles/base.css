@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
 }
 
 body {
@@ -14,7 +14,7 @@ h1 {
 }
 
 header {
-    background-color: #1f2933;
+    background-color: #193e64;
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -29,7 +29,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1rem 10;
 }
 
 nav a {
@@ -39,8 +39,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #374151;
-    border-radius: 4px;
+    background-color: #193e64;
+    border-radius: 10px;
 }
 
 main {
@@ -53,7 +53,7 @@ main {
 }
 
 .card {
-    border: 1px solid #ddd;
+    border: 1px solid #633838;
     padding: 1rem;
     text-align: center;
 }
@@ -61,11 +61,11 @@ main {
 .card img {
     max-width: 100%;
     height: auto;
-    margin: 1rem 0;
+    margin: 1rem 5;
 }
 
 footer {
-    background-color: #1f2933;
+    background-color: #193e64;
     color: #fff;
     text-align: center;
     padding: 1rem;
