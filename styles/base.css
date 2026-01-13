@@ -1,46 +1,47 @@
 * {
     box-sizing: border-box;
-    margin: 10;
-    padding: 10;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
-}
-
-h1 {
-    font-weight: 100;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
     background-color: #193e64;
-    color: #fff;
+    color: #ffffff;
     padding: 1rem;
-    text-align: center;
 }
 
 #course-title {
     display: block;
+    text-align: center;
     font-size: 1.5rem;
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    gap: 1rem 10;
+    gap: 1.5rem;
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: 500;
     padding: 0.5rem 1rem;
+    border-radius: 4px;
 }
 
 nav a:hover {
-    background-color: #193e64;
-    border-radius: 10px;
+    background-color: #ffffff;
+    color: #193e64;
 }
 
 main {
@@ -48,45 +49,50 @@ main {
     margin: 2rem auto;
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .card {
-    border: 1px solid #633838;
+    background-color: #ffffff;
     padding: 1rem;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    margin: 1rem 5;
-}
-
-.page-border {
-    border: 4px solid #ffffff;
-}
-
-/* Footer bar */
-footer {
-    background-color: #1f4d72;
-    /* dark blue */
-    color: white;
+    border-radius: 6px;
     text-align: center;
-    padding: 1.5rem;
+    margin: 0.5rem 0;
 }
 
-/* Main copyright text */
-footer .copyright {
-    font-size: 1.1rem;
-    font-weight: bold;
+footer {
+    background-color: #193e64;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
-/* Last modified text */
-footer .modified {
-    margin-top: 0.4rem;
+footer p {
+    margin: 0.25rem 0;
+}
+
+footer p:first-child {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+footer p:last-child {
+    color: #d8ff4f;
     font-size: 0.95rem;
-    color: #ffff66;
-    /* yellow */
 }
