@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Lagos, Nigeria">
+    <title>Lagos, Nigeria</title>
+
+    <link rel="stylesheet" href="css/place.css">
+    <script src="js/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Lagos, Nigeria</h1>
+    </header>
+
+    <main>
+        <!-- Hero Image -->
+        <picture class="hero">
+            <source srcset="images/hero-large.webp" media="(min-width: 900px)">
+            <source srcset="images/hero-medium.webp" media="(min-width: 600px)">
+            <img src="images/hero-small.webp" alt="City view of Lagos">
+        </picture>
+
+        <!-- Data Section -->
+        <section class="card data">
+            <h2>Data</h2>
+            <p><strong>Country:</strong> Nigeria</p>
+            <p><strong>Population:</strong> 20+ million</p>
+            <p><strong>Language:</strong> English</p>
+            <p><strong>Currency:</strong> Naira (₦)</p>
+            <p><strong>Time Zone:</strong> WAT (UTC+1)</p>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <!-- Mobile SVG Icon -->
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+
+            <p><strong>Temperature:</strong> <span id="temp">28</span> °C</p>
+            <p><strong>Wind Speed:</strong> <span id="wind">10</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="year"></span> 🌍 Lagos Page |
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
