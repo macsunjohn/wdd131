@@ -1,62 +1,103 @@
 :root {
-    --primary: #0b6623;
-    --secondary: #ffffff;
-    --accent: #f4c430;
-    --text: #222;
+    --red: #c8102e;
+    --green: #007a3d;
+    --white: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* HEADER */
 header {
-    background: var(--primary);
-    color: var(--secondary);
-    padding: 1rem;
+    background-color: var(--red);
+    color: var(--white);
     text-align: center;
+    padding: 1.5rem 0;
+    border-bottom: 10px solid var(--green);
 }
 
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* HERO */
 .hero img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
+/* MAIN LAYOUT */
 main {
-    display: grid;
-    gap: 1rem;
-    padding: 1rem;
+    position: relative;
 }
 
+/* CARD BASE */
 .card {
-    border: 1px solid #ccc;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.85);
     padding: 1rem;
-    background: var(--secondary);
+    width: 260px;
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+.card h2 {
+    background-color: var(--green);
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* DATA CARD */
+.data {
+    top: 40px;
+    left: 20px;
+}
+
+/* WEATHER CARD */
+.weather {
+    bottom: 40px;
+    right: 20px;
 }
 
 .weather-icon {
-    width: 50px;
+    width: 40px;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
-/* Wider View */
+.card ul {
+    list-style: none;
+}
+
+.card li {
+    margin-bottom: 0.3rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--red);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* DESKTOP WEATHER ICON */
 @media (min-width: 700px) {
-    main {
-        grid-template-columns: 1fr 1fr;
+    .weather-icon {
+        display: none;
     }
 
     .weather h2::after {
         content: " ⛅";
     }
-
-    .weather-icon {
-        display: none;
-    }
-}
-
-footer {
-    background: var(--primary);
-    color: var(--secondary);
-    text-align: center;
-    padding: 1rem;
 }
