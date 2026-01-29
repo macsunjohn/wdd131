@@ -4,59 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madagascar</title>
+    <meta name="description" content="Discover Nigeria">
+    <title>Explore Nigeria</title>
+
     <link rel="stylesheet" href="css/place.css">
     <script src="js/place.js" defer></script>
 </head>
 
 <body>
+
     <header>
-        <h1>Madagascar</h1>
+        <h1>Nigeria</h1>
     </header>
 
     <main>
-        <!-- HERO IMAGE -->
+        <!-- Hero Image -->
         <picture class="hero">
-            <source srcset="images/hero-large.webp" media="(min-width: 900px)">
-            <source srcset="images/hero-medium.webp" media="(min-width: 600px)">
-            <img src="images/hero-small.webp" alt="Lemurs in Madagascar">
+            <source srcset="images/nigeria-small.webp" media="(max-width: 600px)">
+            <source srcset="images/nigeria-medium.webp" media="(max-width: 1000px)">
+            <img src="images/nigeria-large.webp" alt="Landscape view of Nigeria">
         </picture>
 
-        <!-- DATA CARD -->
-        <section class="card data">
-            <h2>Data</h2>
-            <ul>
-                <li><strong>Area:</strong> 587,041 sq km</li>
-                <li><strong>Population:</strong> 27,691,018</li>
-                <li><strong>Capital:</strong> Antananarivo</li>
-                <li><strong>Languages:</strong> Malagasy, French</li>
-                <li><strong>Currency:</strong> Malagasy Ariary</li>
-                <li><strong>Time Zone:</strong> UTC+3</li>
-                <li><strong>Calling Code:</strong> +261</li>
-                <li><strong>Internet TLD:</strong> .mg</li>
-            </ul>
+        <section class="info">
+            <h2>About Nigeria</h2>
+            <p>
+                Nigeria is a diverse West African country known for its rich culture,
+                vibrant cities, and natural landscapes. It is Africa’s most populous nation.
+            </p>
         </section>
 
-        <!-- WEATHER CARD -->
-        <section class="card weather">
+        <section class="weather">
             <h2>Weather</h2>
+
+            <!-- Mobile view icon -->
             <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
 
             <ul>
-                <li><strong>Temperature:</strong> <span id="temp">10</span> °C</li>
-                <li><strong>Conditions:</strong> Partly Cloudy</li>
-                <li><strong>Wind:</strong> <span id="wind">5</span> km/h</li>
-                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+                <li>Temperature: <span id="temp">28</span>°C</li>
+                <li>Wind Speed: <span id="wind">10</span> km/h</li>
+                <li>Wind Chill: <span id="windchill"></span></li>
             </ul>
         </section>
     </main>
 
     <footer>
         <p>
-            © <span id="year"></span> 🌸 Rubia Magdelena Francesco 🌸 Madagascar<br>
-            Last Modification: <span id="lastModified"></span>
+            © <span id="year"></span> | Nigeria |
+            Last Modified: <span id="lastModified"></span>
         </p>
     </footer>
+
 </body>
 
 </html>
