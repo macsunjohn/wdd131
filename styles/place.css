@@ -105,3 +105,50 @@ footer {
         content: " ⛅";
     }
 }
+
+/* Hero container becomes positioning context */
+.hero-container {
+    position: relative;
+}
+
+/* Make sure hero image fills container */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Default mobile layout (stacked) */
+.data,
+.weather {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+}
+
+/* Wide view overlay */
+@media (min-width: 700px) {
+
+    .data {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 280px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        width: 280px;
+    }
+
+    /* Hide SVG icon on large view */
+    .weather-icon {
+        display: none;
+    }
+
+    /* Add emoji icon via pseudo-element */
+    .weather h2::after {
+        content: " ⛅";
+    }
+}

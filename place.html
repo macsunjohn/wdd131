@@ -15,45 +15,38 @@
         <h1>Nigeria</h1>
     </header>
 
-    <main>
+<main class="hero-container">
 
-        <!-- Hero Image -->
-        <picture class="hero">
-            <source srcset="images/hero-small.webp" media="(max-width: 600px)">
-            <source srcset="images/hero-large.webp" media="(min-width: 601px)">
-            <img src="images/hero-large.webp" alt="Landscape view of Nigeria">
-        </picture>
+    <picture class="hero">
+        <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+        <source srcset="images/hero-large.webp" media="(min-width: 601px)">
+        <img src="images/hero-large.webp" alt="Landscape view of Nigeria">
+    </picture>
 
-        <!-- Data Section -->
-        <section class="data">
-            <h2>Data</h2>
-            <ul>
-                <li><strong>Area:</strong> 923,768 sq km</li>
-                <li><strong>Population:</strong> 227,000,000</li>
-                <li><strong>Capital:</strong> Abuja</li>
-                <li><strong>Languages:</strong> English</li>
-                <li><strong>Currency:</strong> Nigerian Naira (₦)</li>
-                <li><strong>Time Zone:</strong> UTC+1</li>
-                <li><strong>Calling Code:</strong> +234</li>
-                <li><strong>Internet TLD:</strong> .ng</li>
-            </ul>
-        </section>
+    <section class="data">
+        <h2>Data</h2>
+        <ul>
+            <li><strong>Area:</strong> 923,768 sq km</li>
+            <li><strong>Population:</strong> 227,000,000</li>
+            <li><strong>Capital:</strong> Abuja</li>
+            <li><strong>Languages:</strong> English</li>
+            <li><strong>Currency:</strong> Nigerian Naira (₦)</li>
+            <li><strong>Time Zone:</strong> UTC+1</li>
+            <li><strong>Calling Code:</strong> +234</li>
+            <li><strong>Internet TLD:</strong> .ng</li>
+        </ul>
+    </section>
 
-        <!-- Weather Section -->
-        <section class="weather">
-            <h2>Weather</h2>
+    <section class="weather">
+        <h2>Weather</h2>
+        <img src="images/weather.svg" alt="Partly cloudy icon" class="weather-icon">
+        <p>Temperature: <span id="temp">28</span> °C</p>
+        <p>Conditions: <span id="conditions">Partly Cloudy</span></p>
+        <p>Wind: <span id="wind">10</span> km/h</p>
+        <p>Wind Chill: <span id="chill"></span></p>
+    </section>
 
-            <!-- Mobile SVG icon -->
-            <img src="images/weather.svg" alt="Partly cloudy icon" class="weather-icon">
-
-            <p>Temperature: <span id="temp">28</span> °C</p>
-            <p>Conditions: <span id="conditions">Partly Cloudy</span></p>
-            <p>Wind: <span id="wind">10</span> km/h</p>
-            <p>Wind Chill: <span id="chill"></span></p>
-        </section>
-
-    </main>
-
+</main>
     <footer>
         <p>
             © <span id="year"></span> 🌸 Abuja FCT 🌸 Nigeria
