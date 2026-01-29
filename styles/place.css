@@ -1,7 +1,5 @@
 :root {
-    --primary-red: #008753;
-    /* Nigerian green */
-    --primary-green: #ffffff;
+    --primary-green: #008753;
     --light-bg: rgba(255, 255, 255, 0.9);
     --text-dark: #000;
 }
@@ -14,13 +12,13 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #008753;
+    background-color: var(--primary-green);
     color: var(--text-dark);
 }
 
 /* Header */
 header {
-    background-color: #008753;
+    background-color: var(--primary-green);
     color: white;
     text-align: center;
     padding: 1.5rem;
@@ -31,21 +29,19 @@ header h1 {
     font-size: 2.5rem;
 }
 
-/* Hero */
+/* Hero container */
+.hero-container {
+    position: relative;
+}
+
+/* Hero image */
 .hero img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* Main layout */
-main {
-    display: grid;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-/* Data & Weather cards */
+/* Cards */
 .data,
 .weather {
     background-color: var(--light-bg);
@@ -54,7 +50,7 @@ main {
 
 .data h2,
 .weather h2 {
-    background-color: #008753;
+    background-color: var(--primary-green);
     color: white;
     padding: 0.5rem;
     margin-bottom: 0.75rem;
@@ -68,61 +64,11 @@ main {
 
 /* Footer */
 footer {
-    background-color: #008753;
+    background-color: var(--primary-green);
     color: white;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
-}
-
-/* Wider View */
-@media (min-width: 700px) {
-    main {
-        grid-template-columns: 1fr 1fr;
-        position: relative;
-    }
-
-    .data {
-        position: absolute;
-        top: 2rem;
-        left: 2rem;
-        width: 300px;
-    }
-
-    .weather {
-        position: absolute;
-        bottom: 2rem;
-        right: 2rem;
-        width: 300px;
-    }
-
-    .weather-icon {
-        display: none;
-    }
-
-    /* Pseudo-element weather icon */
-    .weather h2::after {
-        content: " ⛅";
-    }
-}
-
-/* Hero container becomes positioning context */
-.hero-container {
-    position: relative;
-}
-
-/* Make sure hero image fills container */
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Default mobile layout (stacked) */
-.data,
-.weather {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1rem;
 }
 
 /* Wide view overlay */
@@ -133,6 +79,7 @@ footer {
         top: 2rem;
         left: 2rem;
         width: 280px;
+        z-index: 2;
     }
 
     .weather {
@@ -140,6 +87,7 @@ footer {
         bottom: 2rem;
         right: 2rem;
         width: 280px;
+        z-index: 2;
     }
 
     /* Hide SVG icon on large view */
@@ -147,7 +95,7 @@ footer {
         display: none;
     }
 
-    /* Add emoji icon via pseudo-element */
+    /* Emoji weather icon */
     .weather h2::after {
         content: " ⛅";
     }
