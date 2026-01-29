@@ -1,78 +1,107 @@
+:root {
+    --primary-red: #008753;
+    /* Nigerian green */
+    --primary-green: #ffffff;
+    --light-bg: rgba(255, 255, 255, 0.9);
+    --text-dark: #000;
+}
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #b11226;
-    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #008753;
+    color: var(--text-dark);
 }
 
 /* Header */
 header {
-    background-color: #c8102e;
+    background-color: #008753;
     color: white;
     text-align: center;
-    padding: 25px 10px;
-    border-bottom: 8px solid #007a3d;
+    padding: 1.5rem;
+    border-bottom: 8px solid #ffffff;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
-/* Hero section */
-.hero {
-    background-image: url("images/lemur.jpg");
-    /* your lemur image */
-    background-size: cover;
-    background-position: center;
-    min-height: 500px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
+/* Hero */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* Cards */
-.card {
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    width: 300px;
-    border-radius: 4px;
+/* Main layout */
+main {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-.card h2 {
-    background-color: #007a3d;
+/* Data & Weather cards */
+.data,
+.weather {
+    background-color: var(--light-bg);
+    padding: 1rem;
+}
+
+.data h2,
+.weather h2 {
+    background-color: #008753;
     color: white;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
-/* Data card list */
-.data-card ul {
-    list-style: none;
-}
-
-.data-card li {
-    margin-bottom: 8px;
+/* Weather icon (mobile) */
+.weather-icon {
+    width: 50px;
+    margin-bottom: 0.5rem;
 }
 
 /* Footer */
 footer {
-    background-color: #c8102e;
+    background-color: #008753;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 1rem;
     font-size: 0.9rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        gap: 20px;
+/* Wider View */
+@media (min-width: 700px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 300px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        width: 300px;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    /* Pseudo-element weather icon */
+    .weather h2::after {
+        content: " ⛅";
     }
 }

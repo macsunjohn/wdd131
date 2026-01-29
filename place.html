@@ -2,55 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Madagascar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>Nigeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Place page for Nigeria">
+    <link rel="stylesheet" href="css/place.css">
+    <script src="js/place.js" defer></script>
 </head>
 
 <body>
-
-    <!-- Header -->
     <header>
-        <h1>Madagascar</h1>
+        <h1>Nigeria</h1>
     </header>
 
-    <!-- Main Section -->
-    <main class="hero">
+    <main>
 
-        <!-- Data Card -->
-        <section class="card data-card">
+        <!-- Hero Image -->
+        <picture class="hero">
+            <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+            <source srcset="images/hero-large.webp" media="(min-width: 601px)">
+            <img src="images/hero-large.webp" alt="Landscape view of Nigeria">
+        </picture>
+
+        <!-- Data Section -->
+        <section class="data">
             <h2>Data</h2>
             <ul>
-                <li><strong>Area:</strong> 587,041 sq km</li>
-                <li><strong>Population:</strong> 27,691,018</li>
-                <li><strong>Capital:</strong> Antananarivo</li>
-                <li><strong>Languages:</strong> Malagasy, French</li>
-                <li><strong>Currency:</strong> Malagasy Ariary</li>
-                <li><strong>Time Zone:</strong> UTC+3</li>
-                <li><strong>Calling Code:</strong> +261</li>
-                <li><strong>Internet TLD:</strong> .mg</li>
+                <li><strong>Area:</strong> 923,768 sq km</li>
+                <li><strong>Population:</strong> 227,000,000</li>
+                <li><strong>Capital:</strong> Abuja</li>
+                <li><strong>Languages:</strong> English</li>
+                <li><strong>Currency:</strong> Nigerian Naira (₦)</li>
+                <li><strong>Time Zone:</strong> UTC+1</li>
+                <li><strong>Calling Code:</strong> +234</li>
+                <li><strong>Internet TLD:</strong> .ng</li>
             </ul>
         </section>
 
-        <!-- Weather Card -->
-        <section class="card weather-card">
-            <h2>Weather ⛅</h2>
-            <p>Temperature: <span id="temp"></span>°C</p>
-            <p>Conditions: <span id="condition"></span></p>
-            <p>Wind: <span id="wind"></span> km/h</p>
-            <p>Wind Chill: <span id="chill"></span>°C</p>
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <!-- Mobile SVG icon -->
+            <img src="images/weather.svg" alt="Partly cloudy icon" class="weather-icon">
+
+            <p>Temperature: <span id="temp">28</span> °C</p>
+            <p>Conditions: <span id="conditions">Partly Cloudy</span></p>
+            <p>Wind: <span id="wind">10</span> km/h</p>
+            <p>Wind Chill: <span id="chill"></span></p>
         </section>
 
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>©2024 🌸 Rubia Magdelena Francesco 🌸 Madagascar</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
+        <p>
+            © <span id="year"></span> 🌸 Abuja FCT 🌸 Nigeria
+        </p>
+        <p>
+            Last Modification: <span id="lastModified"></span>
+        </p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
