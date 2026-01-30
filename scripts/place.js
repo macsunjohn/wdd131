@@ -1,26 +1,33 @@
-// Static weather values (Nigeria)
-const temperature = 28; // °C
-const windSpeed = 10;   // km/h
-
-// Footer information
+// ----------------------------
+// FOOTER DATES
+// ----------------------------
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
-// Wind chill function (one-line return)
-function calculateWindChill(temp, speed) {
-  return (
-    13.12 +
-    0.6215 * temp -
-    11.37 * Math.pow(speed, 0.16) +
-    0.3965 * temp * Math.pow(speed, 0.16)
-  ).toFixed(1);
+// ----------------------------
+// WEATHER VALUES
+// ----------------------------
+const temp = parseFloat(document.getElementById("temp").textContent);
+const wind = parseFloat(document.getElementById("wind").textContent);
+const chill = document.getElementById("chill");
+
+// ----------------------------
+// WIND CHILL FUNCTION (METRIC)
+// ----------------------------
+function calculateWindChill(t, w) {
+    return (
+        13.12 +
+        0.6215 * t -
+        11.37 * Math.pow(w, 0.16) +
+        0.3965 * t * Math.pow(w, 0.16)
+    ).toFixed(1);
 }
 
-// Wind chill logic
-const chillElement = document.getElementById("chill");
-
-if (temperature <= 10 && windSpeed > 4.8) {
-  chillElement.textContent = `${calculateWindChill(temperature, windSpeed)} °C`;
+// ----------------------------
+// APPLY RULES
+// ----------------------------
+if (temp <= 10 && wind > 4.8) {
+    chill.textContent = calculateWindChill(temp, wind) + " °C";
 } else {
-  chillElement.textContent = "N/A";
+    chill.textContent = "N/A";
 }

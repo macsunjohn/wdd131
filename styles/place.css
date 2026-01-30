@@ -1,102 +1,96 @@
 :root {
-    --primary-green: #008753;
-    --light-bg: rgba(255, 255, 255, 0.9);
-    --text-dark: #000;
+    --green: #008753;
+    --white-bg: rgba(255, 255, 255, 0.9);
 }
 
+/* RESET */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--primary-green);
-    color: var(--text-dark);
+    background-color: var(--green);
 }
 
-/* Header */
+/* HEADER */
 header {
-    background-color: var(--primary-green);
+    background-color: #c8102e;
     color: white;
     text-align: center;
     padding: 1.5rem;
-    border-bottom: 8px solid #ffffff;
+    border-bottom: 10px solid var(--green);
 }
 
 header h1 {
     font-size: 2.5rem;
 }
 
-/* Hero container */
+/* HERO */
 .hero-container {
     position: relative;
 }
 
-/* Hero image */
 .hero img {
     width: 100%;
-    height: auto;
     display: block;
 }
 
-/* Cards */
+/* DATA & WEATHER CARDS */
 .data,
 .weather {
-    background-color: var(--light-bg);
+    background-color: var(--white-bg);
     padding: 1rem;
+    margin: 1rem;
 }
 
 .data h2,
 .weather h2 {
-    background-color: var(--primary-green);
+    background-color: var(--green);
     color: white;
     padding: 0.5rem;
     margin-bottom: 0.75rem;
 }
 
-/* Weather icon (mobile) */
+/* WEATHER ICON */
 .weather-icon {
-    width: 50px;
+    width: 45px;
     margin-bottom: 0.5rem;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-    background-color: var(--primary-green);
+    background-color: #c8102e;
     color: white;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
 }
 
+/* DESKTOP OVERLAY LAYOUT */
 @media (min-width: 700px) {
 
-    /* DATA – left side of hero */
     .data {
         position: absolute;
-        top: 3rem;
+        top: 2rem;
         left: 2rem;
-        width: 300px;
-        z-index: 2;
+        width: 280px;
     }
 
-    /* WEATHER – right side of hero */
     .weather {
         position: absolute;
-        top: 3rem;
+        bottom: 2rem;
         right: 2rem;
-        width: 300px;
-        z-index: 2;
+        width: 280px;
     }
 
-    /* Hide SVG icon on large view */
     .weather-icon {
         display: none;
     }
 
-    /* Emoji icon after Weather heading */
+    /* Emoji icon like screenshot */
     .weather h2::after {
         content: " ⛅";
     }
