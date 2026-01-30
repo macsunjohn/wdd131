@@ -71,22 +71,23 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Wide view overlay */
 @media (min-width: 700px) {
 
+    /* DATA – left side of hero */
     .data {
         position: absolute;
-        top: 2rem;
+        top: 3rem;
         left: 2rem;
-        width: 280px;
+        width: 300px;
         z-index: 2;
     }
 
+    /* WEATHER – right side of hero */
     .weather {
         position: absolute;
-        bottom: 2rem;
+        top: 3rem;
         right: 2rem;
-        width: 280px;
+        width: 300px;
         z-index: 2;
     }
 
@@ -95,7 +96,7 @@ footer {
         display: none;
     }
 
-    /* Emoji weather icon */
+    /* Emoji icon after Weather heading */
     .weather h2::after {
         content: " ⛅";
     }
