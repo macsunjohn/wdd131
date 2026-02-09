@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product review form">
-    <meta name="author" content="John Marco">
+    <meta name="description" content="Product review form that allows users to select a product, rate it, choose features, and submit feedback.">
+    <meta name="author" content="Mark John">
     <title>Product Review Form</title>
 
     <link rel="stylesheet" href="styles/form.css">
@@ -30,20 +30,29 @@
             <fieldset>
                 <legend>Overall Rating</legend>
 
-                <label>
-                    <input type="radio" name="rating" value="1" required> ☆
+                <label for="rating1">
+                    <input type="radio" id="rating1" name="rating" value="1" required> 
+                    ☆
                 </label>
-                <label>
-                    <input type="radio" name="rating" value="2"> ☆☆
+
+                <label for="rating2">
+                    <input type="radio" id="rating2" name="rating" value="2" required>
+                    ☆☆
                 </label>
-                <label>
-                    <input type="radio" name="rating" value="3"> ☆☆☆
+
+                <label for="rating3">
+                    <input type="radio" id="rating3" name="rating" value="3" required>
+                    ☆☆☆
                 </label>
-                <label>
-                    <input type="radio" name="rating" value="4"> ☆☆☆☆
+
+                <label for="rating4">
+                    <input type="radio" id="rating4" name="rating" value="4" required>
+                    ☆☆☆☆
                 </label>
-                <label>
-                    <input type="radio" name="rating" value="5"> ☆☆☆☆☆
+
+                <label for="rating5">
+                    <input type="radio" id="rating5" name="rating" value="5" required>
+                    ☆☆☆☆☆
                 </label>
             </fieldset>
 
@@ -55,17 +64,24 @@
             <fieldset>
                 <legend>Useful Features</legend>
 
-                <label>
-                    <input type="checkbox" name="features" value="durability"> Durability
+                <label for="feature1">
+                    <input type="checkbox" id="feature1" name="features" value="durability">
+                    Durability
                 </label>
-                <label>
-                    <input type="checkbox" name="features" value="ease"> Ease of Use
+
+                <label for="feature2">
+                    <input type="checkbox" id="feature2" name="features" value="ease">
+                    Ease of Use
                 </label>
-                <label>
-                    <input type="checkbox" name="features" value="performance"> Performance
+
+                <label for="feature3">
+                    <input type="checkbox" id="feature3" name="features" value="performance">
+                    Performance
                 </label>
-                <label>
-                    <input type="checkbox" name="features" value="design"> Design
+
+                <label for="feature4">
+                    <input type="checkbox" id="feature4" name="features" value="design">
+                    Design
                 </label>
             </fieldset>
 
