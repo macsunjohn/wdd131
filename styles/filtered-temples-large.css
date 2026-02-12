@@ -1,0 +1,33 @@
+@media (min-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .site-title {
+        margin-bottom: 0;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+}
