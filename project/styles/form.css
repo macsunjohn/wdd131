@@ -56,3 +56,14 @@ textarea {
         max-width: 700px;
     }
 }
+
+nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
