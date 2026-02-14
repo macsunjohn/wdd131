@@ -18,12 +18,15 @@
     </header>
 
     <main>
-        <form method="get" action="review.html">
+        <form method="post" action="review.html">
 
             <!-- Product Name -->
             <label for="product">Product Name</label>
             <select id="product" name="product" required>
                 <option value="" disabled selected>Select a Product ...</option>
+                <option value="phone">Smart Phone</option>
+                <option value="laptop">Laptop</option>
+                <option value="tablet">Tablet</option>
             </select>
 
             <!-- Overall Rating -->
@@ -65,22 +68,22 @@
                 <legend>Useful Features</legend>
 
                 <label for="feature1">
-                    <input type="checkbox" id="feature1" name="features" value="durability">
+                    <input type="checkbox" id="feature1" name="features[]" value="durability">
                     Durability
                 </label>
 
                 <label for="feature2">
-                    <input type="checkbox" id="feature2" name="features" value="ease">
+                    <input type="checkbox" id="feature2" name="features[]" value="ease">
                     Ease of Use
                 </label>
 
                 <label for="feature3">
-                    <input type="checkbox" id="feature3" name="features" value="performance">
+                    <input type="checkbox" id="feature3" name="features[]" value="performance">
                     Performance
                 </label>
 
                 <label for="feature4">
-                    <input type="checkbox" id="feature4" name="features" value="design">
+                    <input type="checkbox" id="feature4" name="features[]" value="design">
                     Design
                 </label>
             </fieldset>
