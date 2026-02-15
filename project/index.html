@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Discover Nigeria | Home</title>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -21,7 +21,7 @@
 </div>
 
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="culture.html">Culture</a></li>
         <li><a href="cuisine.html">Cuisine</a></li>
@@ -44,10 +44,66 @@
       <p>Explore the culture, cuisine, history, and beauty of Nigeria</p>
       <a href="culture.html" class="btn">Start Exploring</a>
     </section>
-  </main>
-<footer>
+        <section class="trips">
+  <h2 class="trips-title">Trips <span class="trips-icon">🗺️</span></h2>
 
-</footer>
+  <div class="trip-cards">
+    <!-- Card 1 -->
+    <div class="trip-card">
+      <img src="images/obudu_ranch.jpg" alt="Obudu Mountains" class="trip-img">
+      <p class="trip-duration">Trip - 3 days</p>
+      <h3 class="trip-name"><a href="trips/obudu.html">Obudu Mountain Resort Adventure</a></h3>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="trip-card">
+      <img src="images/olumo_rock.jpg" alt="Olumo Rock" class="trip-img">
+      <p class="trip-duration">Trip - 1 day</p>
+      <h3 class="trip-name"><a href="trips/olumo.html">Explore Olumo Rock and Abeokuta</a></h3>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="trip-card">
+      <img src="images/yankari_park.jpg" alt="Yankari National Park" class="trip-img">
+      <p class="trip-duration">Trip - 2 days</p>
+      <h3 class="trip-name"><a href="trips/yankari.html">Safari at Yankari National Park</a></h3>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="trip-card">
+      <img src="images/lekki-walk.jpg" alt="Lekki Conservation Centre" class="trip-img">
+      <p class="trip-duration">Trip - 1 day</p>
+      <h3 class="trip-name"><a href="trips/lekki.html">Nature Walk at Lekki Conservation Centre</a></h3>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+<!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <div class="footer-left">
+        <h3>Discover Nigeria</h3>
+        <p>&copy; <span id="year"></span> Discover Nigeria. All rights reserved. 💕 John Mark 💕</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="couisine.html">Cousine</a>
+        <a href="culture.html">Culture</a>
+        <a href="sights.html">Sights</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <p>Last Updated: <span id="lastModified"></span></p>
+      </div>
+
+    </div>
+  </footer>
 
 <script src="scripts/getdates.js" defer></script>
     
