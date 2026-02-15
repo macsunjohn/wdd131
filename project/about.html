@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Nigeria showcases Nigeria's past history, leaders, cuisines, culture, sights, and sounds.">
+  <meta name="author" content="John Mark">
+
+  <link rel="stylesheet" href="styles/base.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <title>Discover Nigeria | About</title>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/logo.png" alt="Discover Nigeria Logo" class="logo-img">
+        <span>Discover Nigeria</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="cuisine.html">Cuisine</a></li>
+        <li><a href="sights.html">Sights</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="col image-col">
+            <div class="image-wrapper">
+              <img src="images/lagos.jpg" alt="Lagos, Nigeria skyline">
+            </div>
+          </div>
+
+          <div class="col text-col">
+            <div class="text-wrapper">
+              <span class="subtitle">Our Story</span>
+              <h2>About Nigeria</h2>
+
+              <p class="lead">
+                Nigeria is located in West Africa. It has a diverse geography, with climates ranging from arid to humid equatorial. Hundreds of languages are spoken in the country, including Yoruba, Igbo, Fula, Hausa, Edo, Ibibio, Tiv, and English. The country has abundant natural resources, notably large deposits of petroleum and natural gas.
+              </p>
+
+              <p class="lead">
+                The national capital is Abuja, located in the Federal Capital Territory created in 1976. Lagos, the former capital, remains the country’s leading commercial and industrial city.
+              </p>
+
+              <p class="lead">
+                Modern Nigeria dates from 1914 when the British Protectorates of Northern and Southern Nigeria were joined. The country became independent on October 1, 1960, and in 1963 adopted a republican constitution while remaining a member of the Commonwealth.
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section class="tab-section">
+        <p class="lead">Click on each tab to find out more information about Nigeria</p>
+      <div class="tabnigeria">
+        <button class="tablinks active" onclick="openItem(event, 'Location')">Location</button>
+        <button class="tablinks" onclick="openItem(event, 'Population')">Population</button>
+        <button class="tablinks" onclick="openItem(event, 'Capital')">Capital</button>
+        <button class="tablinks" onclick="openItem(event, 'Cities')">Major Cities</button>
+      </div>
+
+      <div id="Location" class="tabcontent" >
+        <h2>Location of Nigria</h2>
+        <p class="lead">Nigeria is located in West Africa, along the Gulf of Guinea on the Atlantic Ocean. 
+        It lies between latitudes 4°N and 14°N and longitudes 3°E and 15°E. Nigeria shares 
+        land borders with Benin to the west, Niger to the north, Chad to the northeast, and 
+        Cameroon to the east. To the south, it has a coastline of about 853 kilometers along the 
+        Atlantic Ocean.</p>
+        <p class="lead">
+            Because of its location, Nigeria serves as a major gateway between West and Central Africa. 
+            Its position along the coast has historically made it important for trade, cultural exchange, 
+            and economic activities. The country’s geography includes coastal plains, tropical 
+            rainforests, savannas, and semi-arid regions in the north. Its central location in 
+            West Africa makes it one of the most influential countries on the continent, 
+            both economically and culturally.
+        </p>
+      </div>
+
+      <div id="Population" class="tabcontent">
+        <h2>Population of Nigeria</h2>
+        <p class="lead"> Nigeria is the most populous country in Africa and one of the most populous nations in the world. It has a population of over 220 million people, and the number continues to grow rapidly each year. This large population makes Nigeria a major cultural, economic, and political force on the African continent.</p>
+        <p class="lead"> The country is home to hundreds of ethnic groups and languages, creating one of the most diverse populations in the world. The three largest ethnic groups are the Hausa-Fulani in the north, the Yoruba in the southwest, and the Igbo in the southeast. English serves as the official language and helps unite the many different cultural groups. </p>
+        <p class="lead"> Nigeria also has a very young population, with a large percentage of citizens under the age of 30. This youthful population provides strong potential for economic growth, innovation, and development. Major cities such as Lagos, Abuja, Kano, and Port Harcourt continue to grow as people move to urban areas for education and job opportunities. </p>
+      </div>
+
+      <div id="Capital" class="tabcontent">
+        <h2>Capital of Nigeria</h2>
+        <p class="lead"> The capital of Nigeria is Abuja. It is located in the center of the country within the Federal Capital Territory (FCT). Abuja officially became Nigeria’s capital on December 12, 1991, replacing Lagos. </p>
+        <p class="lead"> The city was chosen because of its central location, which makes it more accessible to people from all parts of the country. Unlike Lagos, which is a coastal and highly crowded city, Abuja was carefully planned and developed to serve as the nation’s administrative and political center. </p>
+        <p class="lead"> Abuja is home to important national institutions, including the Presidential Villa (Aso Rock Villa), the National Assembly, and the Supreme Court. The city is also known for its modern infrastructure, wide roads, and beautiful landmarks such as Aso Rock, Zuma Rock (nearby), and the National Mosque. </p>
+        <p class="lead"> Today, Abuja represents unity and neutrality, as it is not dominated by any single ethnic group. It continues to grow as one of the most organized and rapidly developing cities in Nigeria. </p>
+      </div>
+
+      <div id="Cities" class="tabcontent">
+  <h3>Major Cities</h3>
+
+  <p class="lead">
+    Nigeria has several major cities that play important roles in the country’s economy,
+    culture, education, and government. These cities are centers of trade, innovation,
+    and population growth.
+  </p>
+
+  <ul class="no-bullets">
+    <li class="lead">
+      <strong>Lagos</strong> – The largest city in Nigeria and the country’s main commercial hub.
+      It is known for its busy ports, entertainment industry, financial institutions,
+      and vibrant lifestyle.
+    </li>
+
+    <li class="lead">
+      <strong>Abuja</strong> – The capital city of Nigeria, located in the Federal Capital Territory.
+      It serves as the political and administrative center of the nation.
+    </li>
+
+    <li class="lead">
+      <strong>Kano</strong> – One of the oldest cities in West Africa and a major center for trade,
+      agriculture, and Islamic culture in northern Nigeria.
+    </li>
+
+    <li class="lead">
+      <strong>Ibadan</strong> – A historic city known for its educational institutions,
+      including the University of Ibadan, and its role in Nigeria’s colonial history.
+    </li>
+
+    <li class="lead">
+      <strong>Port Harcourt</strong> – A key city in the Niger Delta region,
+      important for Nigeria’s oil and gas industry.
+    </li>
+  </ul>
+
+  <p class="lead">
+    These cities contribute greatly to Nigeria’s economic strength and cultural diversity,
+    making the country one of the most dynamic nations in Africa.
+  </p>
+</div>
+
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-left">
+        <h3>Discover Nigeria</h3>
+        <p>&copy; <span id="currentyear"></span> Discover Nigeria. All rights reserved. 💕 John Mark 💕</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cuisine.html">Cuisine</a>
+        <a href="culture.html">Culture</a>
+        <a href="sights.html">Sights</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <p id="lastModified">Last Modification: </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+
+</body>
+</html>
