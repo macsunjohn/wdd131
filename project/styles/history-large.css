@@ -1,0 +1,33 @@
+@media (min-width: 768px) {
+
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .site-title {
+        margin-bottom: 0;
+    }
+
+    .historynav ul {
+        justify-content: flex-end;
+    }
+
+    .president-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .historynav {
+        display: block;
+    }
+
+    .historynav ul {
+        flex-direction: row;
+    }
+}
