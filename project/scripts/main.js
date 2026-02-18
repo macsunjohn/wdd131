@@ -23,3 +23,17 @@ document.getElementById("lastModified").textContent =
   document.getElementById(itemName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// Contact Page
+const form = document.getElementById('contactForm');
+    const thankYou = document.getElementById('thankYouMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); 
+
+      // Show thank you card
+      thankYou.style.display = 'block';
+
+      // Reset form
+      form.reset();
+    });
