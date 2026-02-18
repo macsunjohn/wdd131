@@ -901,3 +901,59 @@ button:hover {
   margin: 0;
   color: var(--primary-green);
 }
+
+
+/* ===============================
+   Sight Grid Layout
+================================ */
+#cuisine-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* ===============================
+   Sight Card
+================================ */
+#cuisine-cards section {
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+#cuisine-cards section:hover {
+  transform: scale(1.02);
+}
+
+/* ===============================
+   Sight Text
+================================ */
+#cuisine-cards h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--primary-green);
+  font-family: var(--nav-font);
+}
+
+#cuisine-cards p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+/* ===============================
+   Sight Images
+================================ */
+#cuisine-cards img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 0.75rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+}
